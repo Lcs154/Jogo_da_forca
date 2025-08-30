@@ -119,9 +119,9 @@ Tentativas: {' '.join(tentativas)}''')
 
     sleep(3)
     os.system('cls')
-    main()
+    menu()
 
-def main():
+def menu():
     op = input(''' Deseja jogar Forca?
         1. Sim
         2. Não
@@ -136,7 +136,7 @@ def main():
             exit()
         case _:
             os.system('cls')
-            main()
+            menu()
 
 if __name__ == '__main__':
-    main()
+    menu()
